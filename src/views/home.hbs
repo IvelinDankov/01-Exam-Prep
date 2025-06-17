@@ -1,0 +1,19 @@
+{{setTitle "Home Page"}}
+
+<h1>Welcome to SoftUni Wiki!</h1>
+<section id="featured">
+  <h2>Latests articles</h2>
+  {{#each latestArticels}}
+    <article>
+
+      <h3>{{title}}</h3>
+      <p>
+        {{description}}&hellip;
+      </p>
+      <div class="controls">
+        <a href="/articles/{{id}}/details">Read more</a>
+      </div>
+    </article>
+  {{/each}}
+
+</section>

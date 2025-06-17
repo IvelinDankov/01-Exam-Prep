@@ -1,0 +1,20 @@
+{{setTitle "Create Article"}}
+
+<h1>Welcome to SoftUni Wiki!</h1>
+{{#if error}}
+  <section id="notifications">
+    <p>{{error}}</p>
+  </section>
+{{/if}}
+<section>
+  <h2>Create new article</h2>
+  <div class="spacer">
+    <form method="post">
+      <label>Article title</label>
+      <input type="text" class="title" name="title" value="{{title}}" />
+      <label>Content</label>
+      <textarea name="description">{{content}}</textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</section>
