@@ -9,6 +9,12 @@ function hbsCofig(app) {
       setTitle(title) {
         this.pageTitle = title;
       },
+      limitWords(text, limit) {
+        const words = text.split(/\s+/);
+
+        if (words.length <= limit) return text;
+        return words.slice(0, limit).join(" ") + "...";
+      },
     },
     runtimeOptions: {
       allowProtoMethodsByDefault: true,

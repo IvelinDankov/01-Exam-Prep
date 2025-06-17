@@ -10,6 +10,6 @@ export default {
     return Article.create({ title, description, author });
   },
   getLatest() {
-    return Article.find().sort(-1).limit(3);
+    return Article.find().sort("-1").limit(3);
   },
 };
